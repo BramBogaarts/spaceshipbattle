@@ -15,19 +15,17 @@ class Spaceship {
         $this->turret = $turret;
     }
     
-    public function attack($target) {
+    public function attack(spaceship $target) {
         if ($this->isDestroyed()) {
             echo $this->getName() . " is al vernietigd en kan niet aanvallen!\n";
             return;
         }
         
         $target->health -= $this->power;
-        if ($target->health < 0) {
-            $target->health = 0;
-        }
+    
         
         if ($target->isDestroyed()) {
-            echo $target->getName() . " is vernietigd!\n";
+            echo $target->getName() . " is vernietigd\n";
         }
     }
     
