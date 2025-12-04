@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/spaceshipbattle//css/home.css">
 </head>
 <body>
+    
 <?php
 require_once __DIR__ . '/php/objecten/spaceship.php';
 require_once __DIR__ . '/php/objecten/turret.php';
@@ -56,5 +57,7 @@ echo "<br>";
 $gevecht = new battle($spaceship, $spaceship2);
 $gevecht -> start();
 ?>
+<button><a href="index.php">opnieuw</a></button>
+<a href="php/DAL/data.php">database</a>
 </body>
 </html>
