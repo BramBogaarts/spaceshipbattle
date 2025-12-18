@@ -15,44 +15,44 @@ class Turret {
     }
 
     // Get
-    public function getAmmo(): int {
+    public function getTurretAmmo(): int {
         return $this->ammo;
     }
     
-    public function getSpeed(): int {
+    public function getTurretSpeed(): int {
         return $this->speed;
     }
     
-    public function getDamage(): int {
+    public function getTurretDamage(): int {
         return $this->damage;
     }
     
-    public function getReload(): int {
+    public function getTurretReload(): int {
         return $this->reload;
     }
 
-    public function getHp(): int {
+    public function getTurretHp(): int {
         return $this->hp;
     }
 
     // Set
-    public function setAmmo(int $ammo): void {
+    public function setTurretAmmo(int $ammo): void {
         $this->ammo = $ammo;
     }
     
-    public function setSpeed(int $speed): void {
+    public function setTurretSpeed(int $speed): void {
         $this->speed = $speed;
     }
     
-    public function setDamage(int $damage): void {
+    public function setTurretDamage(int $damage): void {
         $this->damage = $damage;
     }
 
-    public function setReload(int $reload): void {
+    public function setTurretReload(int $reload): void {
         $this->reload = $reload;
     }
 
-    public function setHp(int $hp): void {
+    public function setTurretHp(int $hp): void {
         $this->hp = $hp;
     }
 }

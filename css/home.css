@@ -1,0 +1,17 @@
+.knop1 {
+    background-color: aqua;
+}
+.verloren{
+    color: red;
+}
+.gewonnen{
+    color: green;
+}
+.gelijk{
+    color: blue;
+}
+body {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
