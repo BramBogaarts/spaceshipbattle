@@ -1,5 +1,10 @@
-<?php 
-class Turret {
+<?php
+namespace Entities;
+
+require_once __DIR__ . '/../interfaces/Iturret.php';
+use Interfaces\Entities\TurretInterface;
+
+class Turret implements TurretInterface {
     public int $ammo;
     public int $speed;
     public int $damage;

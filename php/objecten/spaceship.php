@@ -1,5 +1,8 @@
 <link rel="stylesheet" href="/spaceshipbattle/css/home.css">
 <?php
+use Entities\Canon;
+use Entities\Turret;
+
 class Spaceship
 {
     public string $name;

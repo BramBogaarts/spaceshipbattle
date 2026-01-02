@@ -1,5 +1,10 @@
 <?php
-class Canon {
+namespace Entities;
+
+require_once __DIR__ . '/../interfaces/Icanon.php';
+use Interfaces\Entities\CanonInterface;
+
+class Canon implements CanonInterface {
     public int $damage;
     public int $hp;
     public string $name;

@@ -24,3 +24,8 @@
 /app/Config/database.php
 /vendors/*
 /php/DAL
+
+# Environment variabelen
+.env
+.env.local
+.env.*.local

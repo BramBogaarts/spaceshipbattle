@@ -1,18 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
 
+* {
+    font-family: 'Orbitron', sans-serif;
+}
+
 body {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     background: #000;
     color: #ffd700;
     font-family: 'Orbitron', sans-serif;
     min-height: 100vh;
     margin: 0;
+    padding: 20px;
     position: relative;
     overflow-x: hidden;
 }
-
 
 body::before {
     content: "";
@@ -40,7 +46,6 @@ body::before {
     from {
         background-position: 0% 0%;
     }
-
     to {
         background-position: 100% 100%;
     }
@@ -60,7 +65,7 @@ body::before {
     position: relative;
     overflow: hidden;
 }
-/* Database knop - rood thema */
+
 .database-knop {
     background: linear-gradient(145deg, #cc0000, #ff3333);
     border: 2px solid #ff0000;
@@ -74,45 +79,58 @@ body::before {
     letter-spacing: 2px;
     position: relative;
     overflow: hidden;
-
 }
 
-/* Status kleuren met glow effecten */
-.verloren {
-    color: #ff4444;
-    text-shadow: 0 0 5px rgba(255, 0, 0, 0.3);
-    font-weight: bold;
-    font-size: 24px;
+.toevoegen {
+    background: linear-gradient(145deg, #00aa00, #00dd00);
+    border: 2px solid #00ff00;
+    color: #fff;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
 }
 
-.gewonnen {
-    color: #44ff44;
-    text-shadow: 0 0 5px rgba(0, 255, 0, 0.3);
-    font-weight: bold;
-    font-size: 24px;
+.updaten {
+    background: linear-gradient(145deg, #cc8800, #ffaa00);
+    border: 2px solid #ffcc00;
+    color: #fff;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    overflow: hidden;
 }
 
-.gelijk {
-    color: #44ccff;
-    text-shadow: 0 0 5px rgba(0, 204, 255, 0.3);
-    font-weight: bold;
-    font-size: 24px;
+.verwijderen {
+    background: linear-gradient(145deg, #cc0000, #ff3333);
+    border: 2px solid #ff0000;
+    color: #fff;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    overflow: hidden;
 }
 
-/* Container styling */
-.container {
-    background: rgba(0, 0, 0, 0.8);
-    border: 2px solid #ffd700;
-    border-radius: 10px;
-    padding: 40px;
-    margin: 20px auto;
-    max-width: 800px;
-    box-shadow:
-        0 0 20px rgba(255, 215, 0, 0.5),
-        inset 0 0 20px rgba(255, 215, 0, 0.1);
+table {
+    border: 1px solid #ffd700;
 }
 
-/* Scanline effect */
 body::after {
     content: "";
     position: fixed;

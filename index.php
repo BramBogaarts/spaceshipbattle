@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="../spaceshipbattle/css/home.css"> 
 </head>
 
 <body>
-    <button class="knop1"><a href="index.php">opnieuw</a></button>
-    <a href="php/DAL/data.php">database</a>
+    <button class="knop1" onclick="location.href='index.php'">opnieuw</button>
+    <button class="database-knop" onclick="location.href='php/DAL/data.php'">database</button>
     <hr>
     <?php
     require_once __DIR__ . '/php/objecten/spaceship.php';
@@ -19,6 +19,9 @@
     require_once __DIR__ . '/php/objecten/battle.php';
     require_once __DIR__ . '/php/objecten/rooms.php';
     require_once __DIR__ . '/php/objecten/armory.php';
+    
+    use Entities\Canon;
+    use Entities\Turret;
     $turret = new Turret(20, 10, 5, 5, 10);
     $canon = new Canon(10, 10, "Canon");
     $spaceship = new Spaceship("millennium falcon", 100, 5);
