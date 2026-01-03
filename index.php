@@ -61,7 +61,7 @@
     echo "\n";
     echo "<br>";
     echo "<br>";
-
+    // start de battle
     $gevecht = new battle($spaceship, $spaceship2);
     $gevecht->start();
     $armory = new armory ("test", 8,2,3);

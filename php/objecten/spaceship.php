@@ -32,7 +32,7 @@ class Spaceship
         foreach ($this->canon as $canon) {
             $damage += $canon->damage;
         }
-
+        // Als het object een turret heeft, wordt de turret damage toegevoegd. Anders wordt er met een canon aangevallen.
         if ($this->turret !== null) {
             $damage += $this->turret->getTurretDamage();
             echo $this->getName() . " valt " . $target->getName() . " aan met turret!<br>";
